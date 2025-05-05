@@ -1,9 +1,9 @@
 #!/bin/sh
-#exec ./kissat --target=1 --walkinitially=true --chrono=true $1 $2/proof.out
+#exec ./kissat --unsat --psids=true $1 $2/proof.out
 
 SBVA=./bva
 SOLVER=./kissat
-SOLVERARGS="target=1 walkinitially=true chrono=true"
+SOLVERARGS="unsat psids=true"
 
 OUTER_TIMEOUT=400
 INNER_TIMEOUT=200
